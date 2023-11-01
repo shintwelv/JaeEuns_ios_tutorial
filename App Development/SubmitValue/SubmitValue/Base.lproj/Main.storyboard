@@ -79,7 +79,7 @@
                     <navigationItem key="navigationItem" title="Setting" id="H3s-8Q-jNm">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="p2M-oT-hMD">
                             <connections>
-                                <action selector="onSubmit:" destination="BYZ-38-t0r" id="M5i-mH-0Z5"/>
+                                <action selector="onPerformSegue:" destination="BYZ-38-t0r" id="Wob-xW-Z3g"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -89,6 +89,7 @@
                         <outlet property="intervalText" destination="dzi-AI-mde" id="f9O-wc-Xmc"/>
                         <outlet property="isUpdate" destination="nqJ-ga-uh8" id="bC7-ss-f6S"/>
                         <outlet property="isUpdateText" destination="aMw-3h-Kli" id="7op-ku-gWg"/>
+                        <segue destination="7P8-1u-csI" kind="show" identifier="ManualSubmit" id="PxM-zb-nGC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -158,6 +159,7 @@
                         <viewLayoutGuide key="safeArea" id="gtn-MW-hKo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="NML-P3-z3w"/>
                     <connections>
                         <outlet property="resultEmail" destination="tZg-sj-ONE" id="p8f-na-nsD"/>
                         <outlet property="resultInterval" destination="KhR-0d-Ips" id="CWG-kx-T4b"/>
