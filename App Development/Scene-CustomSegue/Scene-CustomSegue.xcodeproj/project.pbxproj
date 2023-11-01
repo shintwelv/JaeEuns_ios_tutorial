@@ -13,6 +13,7 @@
 		C2070F5F2AF271B100F83D71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2070F5D2AF271B100F83D71 /* Main.storyboard */; };
 		C2070F612AF271B200F83D71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2070F602AF271B200F83D71 /* Assets.xcassets */; };
 		C2070F642AF271B200F83D71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2070F622AF271B200F83D71 /* LaunchScreen.storyboard */; };
+		C2070F6C2AF2723200F83D71 /* NewSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2070F6B2AF2723200F83D71 /* NewSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C2070F602AF271B200F83D71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2070F632AF271B200F83D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2070F652AF271B200F83D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2070F6B2AF2723200F83D71 /* NewSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C2070F572AF271B100F83D71 /* AppDelegate.swift */,
 				C2070F592AF271B100F83D71 /* SceneDelegate.swift */,
 				C2070F5B2AF271B100F83D71 /* ViewController.swift */,
+				C2070F6B2AF2723200F83D71 /* NewSegue.swift */,
 				C2070F5D2AF271B100F83D71 /* Main.storyboard */,
 				C2070F602AF271B200F83D71 /* Assets.xcassets */,
 				C2070F622AF271B200F83D71 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2070F6C2AF2723200F83D71 /* NewSegue.swift in Sources */,
 				C2070F5C2AF271B100F83D71 /* ViewController.swift in Sources */,
 				C2070F582AF271B100F83D71 /* AppDelegate.swift in Sources */,
 				C2070F5A2AF271B100F83D71 /* SceneDelegate.swift in Sources */,
