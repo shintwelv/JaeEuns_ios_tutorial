@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Scene-Trans01/Scene-Trans01.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:IBTest/IBTest.xcodeproj">
    </FileRef>
    <FileRef
