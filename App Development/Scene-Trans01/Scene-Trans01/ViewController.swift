@@ -15,5 +15,13 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func moveNext(_ sender: UIButton) {
+        if let uvc = self.storyboard?.instantiateViewController(withIdentifier: "SecondVC") {
+            uvc.modalTransitionStyle = .coverVertical
+            
+            self.present(uvc, animated: true)
+        }
+        
+    }
 }
 
