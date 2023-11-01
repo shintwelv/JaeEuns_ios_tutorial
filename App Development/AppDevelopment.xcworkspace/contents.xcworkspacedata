@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SubmitValue/SubmitValue.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Scene-CustomSegue/Scene-CustomSegue.xcodeproj">
    </FileRef>
    <FileRef
