@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Scene-ActionSegue/Scene-ActionSegue.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Scene-Trans02/Scene-Trans02.xcodeproj">
    </FileRef>
    <FileRef
