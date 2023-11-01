@@ -13,6 +13,7 @@
 		ED681C412AF1F833005075FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED681C3F2AF1F833005075FD /* Main.storyboard */; };
 		ED681C432AF1F834005075FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED681C422AF1F834005075FD /* Assets.xcassets */; };
 		ED681C462AF1F834005075FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED681C442AF1F834005075FD /* LaunchScreen.storyboard */; };
+		ED681C4E2AF1F9DE005075FD /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED681C4D2AF1F9DE005075FD /* Page2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ED681C422AF1F834005075FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED681C452AF1F834005075FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED681C472AF1F834005075FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED681C4D2AF1F9DE005075FD /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				ED681C3B2AF1F833005075FD /* SceneDelegate.swift */,
 				ED681C3D2AF1F833005075FD /* ViewController.swift */,
 				ED681C3F2AF1F833005075FD /* Main.storyboard */,
+				ED681C4D2AF1F9DE005075FD /* Page2ViewController.swift */,
 				ED681C422AF1F834005075FD /* Assets.xcassets */,
 				ED681C442AF1F834005075FD /* LaunchScreen.storyboard */,
 				ED681C472AF1F834005075FD /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				ED681C3E2AF1F833005075FD /* ViewController.swift in Sources */,
 				ED681C3A2AF1F833005075FD /* AppDelegate.swift in Sources */,
+				ED681C4E2AF1F9DE005075FD /* Page2ViewController.swift in Sources */,
 				ED681C3C2AF1F833005075FD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
