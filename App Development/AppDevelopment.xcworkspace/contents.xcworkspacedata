@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Delegate-TextField/Delegate-TextField.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Msg-Notification/Msg-Notification.xcodeproj">
    </FileRef>
    <FileRef
