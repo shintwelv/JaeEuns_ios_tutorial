@@ -13,21 +13,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultUpdate: UILabel!
     @IBOutlet weak var resultInterval: UILabel!
     
-    var paramEmail: String?
-    var paramUpdate: Bool?
-    var paramInterval: Double?
-    
     // 화면이 표시될 때마다 실행이 되는 메소드
     override func viewWillAppear(_ animated: Bool) {
-        if let email = paramEmail {
+        let ad = UIApplication.shared.delegate as? AppDelegate
+        
+        if let email = ad?.paramEmail {
             resultEmail.text = email
         }
         
-        if let update = paramUpdate {
+        if let update = ad?.paramUpdate {
             resultUpdate.text = update ? "자동갱신" : "자동갱신안함"
         }
         
-        if let interval = paramInterval {
+        if let interval = ad?.paramInterval {
             resultInterval.text = "\(interval)분마다"
         }
     }
