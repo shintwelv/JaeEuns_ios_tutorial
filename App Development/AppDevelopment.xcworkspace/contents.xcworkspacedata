@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Delegate-ImagePicker/Delegate-ImagePicker.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Delegate-TextField/Delegate-TextField.xcodeproj">
    </FileRef>
    <FileRef
