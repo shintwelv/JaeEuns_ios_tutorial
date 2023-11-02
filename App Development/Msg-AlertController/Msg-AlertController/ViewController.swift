@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func alert(_ sender: Any) {
-        let alert = UIAlertController(title: "선택", message: "항목을 선택해주세요", preferredStyle: .alert)
+        let alert = UIAlertController(title: "선택", message: "항목을 선택해주세요", preferredStyle: .actionSheet)
         
         let cancel = UIAlertAction(title: "취소", style: .cancel)
         let ok = UIAlertAction(title: "확인", style: .default)
