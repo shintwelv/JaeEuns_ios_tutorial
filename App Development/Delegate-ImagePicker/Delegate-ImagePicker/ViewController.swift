@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController {
 
     @IBOutlet weak var imgView: UIImageView!
 
@@ -20,6 +20,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         self.present(picker, animated: false)
     }
+}
+//MARK: - UIImagePickerControllerDelegate
+extension ViewController: UIImagePickerControllerDelegate {
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         // 이미지 피커 컨트롤러 창 닫기
@@ -38,6 +41,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.imgView.image = img
         }
     }
-    
 }
-
+//MARK: - UINavigationControllerDelegate
+extension ViewController: UINavigationControllerDelegate {
+}
