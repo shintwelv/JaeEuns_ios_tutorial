@@ -15,6 +15,7 @@
 		EDBAF1592AF4C7D900AE2D40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDBAF1572AF4C7D900AE2D40 /* LaunchScreen.storyboard */; };
 		EDBAF1612AF4C86B00AE2D40 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAF1602AF4C86B00AE2D40 /* ListViewController.swift */; };
 		EDBAF1632AF4C99F00AE2D40 /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAF1622AF4C99F00AE2D40 /* MovieVO.swift */; };
+		EDBAF1652AF4D2E200AE2D40 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAF1642AF4D2E200AE2D40 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EDBAF15A2AF4C7D900AE2D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDBAF1602AF4C86B00AE2D40 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		EDBAF1622AF4C99F00AE2D40 /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
+		EDBAF1642AF4D2E200AE2D40 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				EDBAF15A2AF4C7D900AE2D40 /* Info.plist */,
 				EDBAF1602AF4C86B00AE2D40 /* ListViewController.swift */,
 				EDBAF1622AF4C99F00AE2D40 /* MovieVO.swift */,
+				EDBAF1642AF4D2E200AE2D40 /* MovieCell.swift */,
 			);
 			path = MyMovieChart;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				EDBAF1512AF4C7D700AE2D40 /* ViewController.swift in Sources */,
 				EDBAF14D2AF4C7D700AE2D40 /* AppDelegate.swift in Sources */,
+				EDBAF1652AF4D2E200AE2D40 /* MovieCell.swift in Sources */,
 				EDBAF1612AF4C86B00AE2D40 /* ListViewController.swift in Sources */,
 				EDBAF14F2AF4C7D700AE2D40 /* SceneDelegate.swift in Sources */,
 				EDBAF1632AF4C99F00AE2D40 /* MovieVO.swift in Sources */,
