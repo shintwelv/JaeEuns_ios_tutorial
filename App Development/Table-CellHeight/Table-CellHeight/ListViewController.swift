@@ -9,6 +9,11 @@ import UIKit
 
 class ListViewController: UITableViewController {
     var list: [String] = []
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.estimatedRowHeight = 50 // 대충의 높이값
+        self.tableView.rowHeight = UITableView.automaticDimension
+    }
   
     @IBAction func add(_ sender: Any) {
         let alert = UIAlertController(title: "목록 입력", message: "추가될 글을 작성해주세요", preferredStyle: .alert)
@@ -43,12 +48,5 @@ class ListViewController: UITableViewController {
         
         cell.textLabel?.text = list[indexPath.row]
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let row = self.list[indexPath.row]
-        
-        let height = CGFloat(60 + (row.count / 30) * 20) // 30글자당 높이 20 증가
-        return height
     }
 }
