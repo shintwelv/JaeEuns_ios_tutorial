@@ -35,7 +35,10 @@ class ListViewController: UITableViewController {
         cell.desc.text = row.description
         cell.opendate.text = row.opendate
         cell.rating.text = "\(row.rating!)"
-        cell.thumbnail.image = row.thumbnailImage
+        
+        DispatchQueue.main.async {
+            cell.thumbnail.image = self.getThumbnailImage(indexPath.row)
+        }
         
         return cell
     }
@@ -93,6 +96,21 @@ class ListViewController: UITableViewController {
             }
         } catch {
             NSLog("Parse Error!!")
+        }
+    }
+    
+    func getThumbnailImage(_ index: Int) -> UIImage {
+        let mvo = self.list[index]
+        
+        // memoization: 저장된 이미지가 있으면 그것을 반환, 없는 경우 내려받아 저장 후 반환
+        if let savedImage = mvo.thumbnailImage {
+            return savedImage
+        } else {
+            let url: URL! = URL(string: mvo.thumbnail!)
+            let imageData = try! Data(contentsOf: url)
+            mvo.thumbnailImage = UIImage(data: imageData)
+            
+            return mvo.thumbnailImage!
         }
     }
 }
