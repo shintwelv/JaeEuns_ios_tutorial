@@ -35,15 +35,7 @@ class ListViewController: UITableViewController {
         cell.desc.text = row.description
         cell.opendate.text = row.opendate
         cell.rating.text = "\(row.rating!)"
-        
-        // 섬네일 경로를 인자값으로 하는 URL 객체 생성
-        let url: URL! = URL(string: row.thumbnail!)
-        
-        // 이미지를 읽어와 Data 객체에 저장
-        let imageData = try! Data(contentsOf: url)
-        
-        // UIImage 객체를 생성하여 아울렛 변수의 image 속성에 대입
-        cell.thumbnail.image = UIImage(data: imageData)
+        cell.thumbnail.image = row.thumbnailImage
         
         return cell
     }
@@ -86,6 +78,10 @@ class ListViewController: UITableViewController {
                 mvo.thumbnail = r["thumbnailImage"] as? String
                 mvo.detail = r["linkUrl"] as? String
                 mvo.rating = (r["ratingAverage"] as! NSString).doubleValue
+                
+                let url: URL! = URL(string: mvo.thumbnail!)
+                let imageData = try! Data(contentsOf: url)
+                mvo.thumbnailImage = UIImage(data: imageData)
                 
                 self.list.append(mvo)
             }
