@@ -8,6 +8,15 @@
       location = "group:SubmitValue-Back/SubmitValue-Back.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Delegate-ImagePicker/Delegate-ImagePicker.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Delegate-TextField/Delegate-TextField.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Msg-Notification/Msg-Notification.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SubmitValue/SubmitValue.xcodeproj">
    </FileRef>
    <FileRef
