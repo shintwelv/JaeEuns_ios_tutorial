@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Table-CellHeight/Table-CellHeight.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MyMovieChart/MyMovieChart.xcodeproj">
    </FileRef>
    <FileRef
