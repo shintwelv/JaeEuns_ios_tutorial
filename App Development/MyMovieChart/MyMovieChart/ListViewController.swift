@@ -9,27 +9,43 @@ import UIKit
 
 class ListViewController: UITableViewController {
     
-    var dataset = [
-        ("다크나이트", "영웅물에 철학에 음악까지 더해져 예술이 되다", "2008-09-04", 8.95, "darknight.jpg"),
-        ("호우시절", "때를 알고 내리는 좋은 비", "2009-10-08", 7.31, "rain.jpg"),
-        ("말할 수 없는 비밀", "여기서 너까지 다섯 걸음", "2015-05-07", 9.19, "secret.jpg"),
-    ]
-
     lazy var list: [MovieVO] = {
         var datalist: [MovieVO] = []
-        for (title, desc, opendate, rating, thumbnail) in self.dataset {
-            let mvo = MovieVO()
-            mvo.title = title
-            mvo.description = desc
-            mvo.opendate = opendate
-            mvo.rating = rating
-            mvo.thumbnail = thumbnail
-            
-            datalist.append(mvo)
-        }
         return datalist
     }()
     
+    override func viewDidLoad() {
+        let url = "http://swiftapi.rubypaper.co.kr:2029/hoppin/movies?version=1&page=1&count=10&genreId=&order=releasedateasc"
+        let apiURI: URL! = URL(string: url)
+        
+        let apiData = try! Data(contentsOf: apiURI)
+        
+        // json 객체를 파싱하여 NSDictionary 객체로 받음
+        do {
+            let apiDictionary = try JSONSerialization.jsonObject(with: apiData, options: []) as! NSDictionary
+            
+            let hoppin = apiDictionary["hoppin"] as! NSDictionary
+            let movies = hoppin["movies"] as! NSDictionary
+            let movie = movies["movie"] as! NSArray
+            
+            // Iterator 처리를 하면서 API 데이터를 MovieVO 객체에 저장
+            for row in movie {
+                let r = row as! NSDictionary
+                
+                let mvo = MovieVO()
+                
+                mvo.title = r["title"] as? String
+                mvo.description = r["genreNames"] as? String
+                mvo.thumbnail = r["thumbnailImage"] as? String
+                mvo.detail = r["linkUrl"] as? String
+                mvo.rating = (r["ratingAverage"] as! NSString).doubleValue
+                
+                self.list.append(mvo)
+            }
+        } catch {
+            
+        }
+    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.list.count
@@ -44,7 +60,15 @@ class ListViewController: UITableViewController {
         cell.desc.text = row.description
         cell.opendate.text = row.opendate
         cell.rating.text = "\(row.rating!)"
-        cell.thumbnail.image = UIImage(named: row.thumbnail!)
+        
+        // 섬네일 경로를 인자값으로 하는 URL 객체 생성
+        let url: URL! = URL(string: row.thumbnail!)
+        
+        // 이미지를 읽어와 Data 객체에 저장
+        let imageData = try! Data(contentsOf: url)
+        
+        // UIImage 객체를 생성하여 아울렛 변수의 image 속성에 대입
+        cell.thumbnail.image = UIImage(data: imageData)
         
         return cell
     }
