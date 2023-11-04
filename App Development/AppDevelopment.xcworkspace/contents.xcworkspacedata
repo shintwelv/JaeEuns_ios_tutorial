@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AutoResizing-Practice/AutoResizing-Practice.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:MyMovieChart-SpinOff/MyMovieChart-SpinOff.xcodeproj">
    </FileRef>
    <FileRef
