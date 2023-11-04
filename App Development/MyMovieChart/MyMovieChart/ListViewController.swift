@@ -113,4 +113,15 @@ class ListViewController: UITableViewController {
             return mvo.thumbnailImage!
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue_detail" {
+            // 사용자가 클릭한 행을 찾아낸다
+            let path = self.tableView.indexPath(for: sender as! MovieCell)
+            
+            let detailVC = segue.destination as? DetailViewController
+            detailVC?.mvo = self.list[path!.row]
+        }
+    }
+    
 }
