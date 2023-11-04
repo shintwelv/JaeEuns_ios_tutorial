@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -190,6 +191,7 @@
                                     <outlet property="addr" destination="n9Y-Ic-FSG" id="Ex9-eL-ZhT"/>
                                     <outlet property="name" destination="oUf-ZX-qYT" id="87d-D8-blJ"/>
                                     <outlet property="tel" destination="bbl-1e-x3c" id="Ife-ck-yie"/>
+                                    <segue destination="IC9-Li-0ht" kind="show" identifier="segue_map" id="rrl-4B-tib"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -203,6 +205,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TxO-oz-s83" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1597.5999999999999" y="757.87106446776613"/>
+        </scene>
+        <!--Theater View Controller-->
+        <scene sceneID="Hos-db-rZ8">
+            <objects>
+                <viewController id="IC9-Li-0ht" customClass="TheaterViewController" customModule="MyMovieChart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="baQ-MC-xiK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gpG-q3-zUq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UQ4-iO-P98"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Oj8-oL-cYf"/>
+                    <connections>
+                        <outlet property="map" destination="gpG-q3-zUq" id="xd9-pz-Mrl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cc-wV-Fkc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2412" y="757.87106446776613"/>
         </scene>
         <!--영화관-->
         <scene sceneID="0xG-ab-YV6">
@@ -227,6 +255,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0N0-cm-vid" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mds-Z2-3bP">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
