@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C27BB98A2AF6291A003082B1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27BB9892AF6291A003082B1 /* DetailViewController.swift */; };
+		C27BB98C2AF63422003082B1 /* TheaterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27BB98B2AF63422003082B1 /* TheaterCell.swift */; };
+		C27BB98E2AF63473003082B1 /* TheaterListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27BB98D2AF63473003082B1 /* TheaterListController.swift */; };
 		EDBAF14D2AF4C7D700AE2D40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAF14C2AF4C7D700AE2D40 /* AppDelegate.swift */; };
 		EDBAF14F2AF4C7D700AE2D40 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAF14E2AF4C7D700AE2D40 /* SceneDelegate.swift */; };
 		EDBAF1512AF4C7D700AE2D40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBAF1502AF4C7D700AE2D40 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		C27BB9892AF6291A003082B1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C27BB98B2AF63422003082B1 /* TheaterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterCell.swift; sourceTree = "<group>"; };
+		C27BB98D2AF63473003082B1 /* TheaterListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterListController.swift; sourceTree = "<group>"; };
 		EDBAF1492AF4C7D700AE2D40 /* MyMovieChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovieChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDBAF14C2AF4C7D700AE2D40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDBAF14E2AF4C7D700AE2D40 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				C27BB9892AF6291A003082B1 /* DetailViewController.swift */,
 				EDBAF1622AF4C99F00AE2D40 /* MovieVO.swift */,
 				EDBAF1642AF4D2E200AE2D40 /* MovieCell.swift */,
+				C27BB98B2AF63422003082B1 /* TheaterCell.swift */,
+				C27BB98D2AF63473003082B1 /* TheaterListController.swift */,
 			);
 			path = MyMovieChart;
 			sourceTree = "<group>";
@@ -151,9 +157,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDBAF1512AF4C7D700AE2D40 /* ViewController.swift in Sources */,
+				C27BB98C2AF63422003082B1 /* TheaterCell.swift in Sources */,
 				EDBAF14D2AF4C7D700AE2D40 /* AppDelegate.swift in Sources */,
 				EDBAF1652AF4D2E200AE2D40 /* MovieCell.swift in Sources */,
 				EDBAF1612AF4C86B00AE2D40 /* ListViewController.swift in Sources */,
+				C27BB98E2AF63473003082B1 /* TheaterListController.swift in Sources */,
 				EDBAF14F2AF4C7D700AE2D40 /* SceneDelegate.swift in Sources */,
 				EDBAF1632AF4C99F00AE2D40 /* MovieVO.swift in Sources */,
 				C27BB98A2AF6291A003082B1 /* DetailViewController.swift in Sources */,
